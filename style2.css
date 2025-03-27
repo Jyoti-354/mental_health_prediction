@@ -1,0 +1,141 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: url('/static/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px; /* Prevent overlap with the footer */
+}
+
+/* Navbar Styling */
+/* Navbar Styling */
+/* Navbar Styling */
+header {
+   background-color: rgba(255, 255, 255, 0.2); /* Light transparent white */
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  padding: 15px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5%;
+}
+
+.site-name {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffcc00; /* Gold color for a premium look */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 40px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* Container Styling */
+.container {
+  width: 50%;
+  margin: 150px auto;
+  padding: 50px;
+  background: rgba(28, 28, 28, 0.85); /* Same dark color */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Headings */
+h1, h2 {
+  color: #ffcc00;
+}
+
+/* Form Styling */
+form {
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  resize: none;
+  font-size: 16px;
+  background: #1e3a5f; /* Deep Blue */
+  color: white;
+  border: 1px solid #ffcc00;
+}
+
+textarea::placeholder {
+  color: #bbbbbb;
+}
+
+textarea:focus {
+  outline: none;
+  border: 2px solid #ff9900;
+}
+
+/* Buttons */
+button, .btn {
+  background: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  margin-top: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover, .btn:hover {
+  background: #ff9900;
+}
+
+/* Footer */
+footer {
+  background: rgba(28, 28, 28, 0.85); /* Same dark background */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  nav li {
+    margin-left: 20px; /* Adjust space for smaller screens */
+  }
+}

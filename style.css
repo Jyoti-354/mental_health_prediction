@@ -1,0 +1,102 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: url('/static/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container Styling */
+.container {
+  width: 50%;
+  margin: 200px auto; /* Keeps original spacing */
+  padding: 50px;
+  background: rgba(28, 28, 28, 0.85);
+  /* background: rgba(10, 25, 47, 0.9); */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+  /* flex-grow: 1; */
+}
+
+/* Headings */
+h1, h2 {
+  color: #ffcc00;
+}
+
+/* Form Styling */
+form {
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  resize: none;
+  font-size: 16px;
+  background:#1e3a5f; /* Deep Blue */
+  color: white;
+  border: 1px solid #ffcc00; /* Yellow border for contrast */
+}
+
+textarea::placeholder {
+  color: #bbbbbb; /* Light gray for better visibility */
+}
+
+textarea:focus {
+  outline: none;
+  border: 2px solid #ff9900; /* Slightly darker yellow on focus */
+}
+
+
+/* Buttons */
+button, .btn {
+  background: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  margin-top: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover, .btn:hover {
+  background: #ff9900;
+}
+
+/* Back to Home Link */
+.btn {
+  display: block;
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding: 0px; /* Reduced height */
+  font-size: 16px; /* Made text smaller */
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+}
