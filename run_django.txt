@@ -1,0 +1,4 @@
+ .\myenv\Scripts\activate
+Set-ExecutionPolicy RemoteSigned -Scope Process
+ .\myenv\Scripts\activate
+python manage.py runserver
